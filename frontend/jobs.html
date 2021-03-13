@@ -61,26 +61,8 @@
                       <h1 class="mb-4" data-aos="fade-up">Jobs</h1>
                     </div>
                             
-                    <div class="row mx-2">
-                        <div class="col-12 col-md-4">
-                            <div class="card" data-aos="fade-up" data-aos-delay="100">
-                                <img src="images/project/project-image01.jpg" alt="Avatar" style="width:100%">
-                                <div class="container">
-                                  <h5 id="compNameLoc" class="mt-3" style="color: #057a8d;"></h5> 
-                                  <p id="typeOfWorkDur"></p>
-                                  <p id="field">Field: </p> 
-                                  <p id="loEXP">Experince: </p> 
-                                  <p id="about"></p> 
-                                  <p id="hp">Hiring Process: </p>
-                                  <p id="hpw"></p>
-                                </div>
-
-                                <div class="row justify-content-center align-items-center mb-3">
-                                  <button class="button5 button6">Apply</button>
-                                </div>
-                              </div>
-                        </div>
-                        
+                    <div class="row mx-2" id="r">
+                                                
                     </div>
                </div>
                
@@ -122,9 +104,6 @@
             </p>
           </div>
 
-
-          <p id="demo">hello helelo</p>
-
           
 
         </div>
@@ -133,6 +112,7 @@
 
 
 	 <script>
+<<<<<<< HEAD
 	     var s = localStorage.getItem("jobs");
         var obj = JSON.parse(s);
         console.log(obj);
@@ -143,6 +123,46 @@
         document.getElementById("about").innerHTML = obj[0].about_the_company;
         document.getElementById("hp").innerHTML = obj[0].hiring_process;
         document.getElementById("hpw").innerHTML = obj[0].hours_per_week;
+=======
+	      var s = localStorage.getItem("jobs");
+        var obj = JSON.parse(s);
+
+        const container = document.getElementById('r');
+
+        obj.forEach((result) => {
+          // Create card element
+          
+
+          // Construct card content
+          const content = 
+
+          `<div class="col-12 col-md-4">
+                            <div class="card">
+                                <img src="images/project/project-image01.jpg" alt="Avatar" style="width:100%">
+                                <div class="container">
+                                  <h5 id="compNameLoc" class="mt-3" style="color: #057a8d;">
+                                    ${result.company_name}, ${result.location}
+                                    </h5> 
+                                  <p id="typeOfWorkDur">${result.type_of_work}, ${result.duration} <br> 
+                                    ${result.hours_per_week} hours per week
+                                    </p>
+                                  <p id="field">Field: ${result.field}</p> 
+                                  <p id="loEXP">Experince: ${result.level_of_experience}</p> 
+                                  <p id="about">${result.about_the_company}</p> 
+                                  <p id="hp">Hiring Process: ${result.hiring_process}</p>
+                                  
+                                </div>
+
+                                <div class="row justify-content-center align-items-center mb-3">
+                                  <button class="button5 button6">Apply</button>
+                                </div>
+                              </div>
+                        </div>`;
+
+          // Append newyly created card element to the container
+          container.innerHTML += content;
+        })
+>>>>>>> a97b2ed4a6a024b1ec59816af31bb7d22dd36a08
    </script>
    
      <!-- SCRIPTS -->

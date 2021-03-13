@@ -21,6 +21,28 @@
     	}]
 }
 {
+	"company_name" : "Amazon",
+	"duration" : "2 months",
+	"location" : "Bengaluru",
+	"type_of_work" : "Internship",
+	"field": "Software",
+	"level_of_experience" : "None",
+	"about_the_company" : "dummy info",
+	"hiring_process" : "https://mymemeserver.herokuapp.com",
+	"hours_per_week" : 10,
+    "applicants" :	[
+    	{	"name" : "Abc",
+    		"email" : "abc@gmail.com",
+    		"phone" : 833456567,
+    		"university" : "ABc univ",
+    		"major_field" : "infotech",
+    		"passout_year" : 2022,
+    		"university_cgpa" : 9.1,
+    		"resume": "https://google.drive/fvdv.pdf",
+    		"transcript": "https://bsjhshdcs/dadc.jpg"
+    	}]
+}
+{
 	"company_name" : "Microsoft",
 	"duration" : "8 months",
 	"location" : "Hyderabad",
