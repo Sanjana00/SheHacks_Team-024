@@ -56,7 +56,8 @@ body{
 		position:absolute;
 		width:100%;
 		height:1650;
-		background-image: url("https://i.postimg.cc/BnhHF28S/nastuh-abootalebi-y-Wwob8kw-OCk-unsplash-modified.jpg");
+		/*background-image: url("https://c0.anyrgb.com/images/409/411/iphone-ipad-flat-lay-notebook-workplace-working-minimalistic-dahlia-red-dahlia.jpg");*/
+		background-image: url("../images/expblur.jpg");
 		background-repeat:repeat;
 		background-size:contain;
 		top:105px;
@@ -86,7 +87,9 @@ body{
 	  
 	  body {
 		padding: 0 10px;
-		background-image: url("https://i.postimg.cc/BnhHF28S/nastuh-abootalebi-y-Wwob8kw-OCk-unsplash-modified.jpg");
+		/*background-image: url("https://c0.anyrgb.com/images/409/411/iphone-ipad-flat-lay-notebook-workplace-working-minimalistic-dahlia-red-dahlia.jpg");*/
+		/*background-image: url("../images/expblur.jpg");*/
+		background-color: var(--color-1);
 		background-size: contain;
 		background-repeat:repeat;
 		background-attachment: fixed;
