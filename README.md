@@ -10,6 +10,9 @@ Since the usual interview and selection processes place neurodivergent individua
 
 With an anticipated rise in inclusive hiring techniques, a more structured approach was needed. Therefore, HideND came into being. We hope that each and every individual, irrespective of their differences, is able to showcase their skills and unlock their full potential.
 
+<img src="./readme-img/home.png"/>
+<img src="./readme-img/index.png"/>
+
 ### Members:
 
 - [Sanjana Chakravarty](https://github.com/Sanjana00)
