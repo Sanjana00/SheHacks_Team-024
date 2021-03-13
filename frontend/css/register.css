@@ -1,181 +1,305 @@
 body{ 
-background:linear-gradient(to bottom right, rgb(204, 221, 226), #bcbdc4);
-height:750px;
-}
-.headerx{
-	position:relative;
-	width:100%;
-	height:100%;
-	top:0px;
-	bottom:20px;
-	left:0px;
-	color:rgb(248, 195, 248);
-	z-index:7;
-	font-family:verdana;
-	-webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+	background:linear-gradient(to bottom right, rgb(204, 221, 226), #bcbdc4);
+	height:750px;
+	}
+	.headerx{
+		position:relative;
+		width:100%;
+		height:100%;
+		top:0px;
+		bottom:20px;
+		left:0px;
+		color:rgb(248, 195, 248);
+		z-index:7;
+		font-family:verdana;
+		-webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+		
+	}
+	.header{
+		position:absolute;
+		width:100%;
+		height:70px;
+		background:#333333;
+		top:0px;
+		left:0px;
+		color:rgb(252, 241, 177);
+		z-index:7;
+		font-family:verdana;
+		
+	}
+	#logo{
+		height:38px;
+		width:240px;
+		left:22%;
+		bottom: 50%;
+		
+	}
+	#form1{
+		left:43%;
+		top:10px;
+		height:25px;
+		width:200px;
+		
+	}
+	#form2{
+		left:60%;
+		top:10px;
+		height:25px;
+		width:200px;
+	}
+	#forget{
+		color:rgb(241, 241, 187);
+		font-size:12px;
+		margin-top:5px;
+	}
+	 .main{
+		position:absolute;
+		width:100%;
+		height:1650;
+		/*background-image: url("https://c0.anyrgb.com/images/409/411/iphone-ipad-flat-lay-notebook-workplace-working-minimalistic-dahlia-red-dahlia.jpg");*/
+		background-image: url("../images/expblur.jpg");
+		background-repeat:repeat;
+		background-size:contain;
+		top:105px;
+		left:0px;
+		right:0px;
+		color:rgb(26, 31, 31);
+		z-index:20;
+		font-family:verdana;
+		--box-height: 42px;
+		--border-radius: 5px;
+		--space-between: 20px;
+		--font-size: 16px;
+	  
+		--color-0: #ffffff;
+		--color-1: #dcdcdd;
+		--color-2: #c5c3c6;
+		--color-3: #212529;
+		--color-4: #659b5e;
+		--color-5: #ce4257;
+	 }
+	 * {
+		margin: 0;
+		padding: 0;
+		font-family: "Montserrat", sans-serif;
+		box-sizing: border-box;
+	  }
+	  
+	  body {
+		padding: 0 10px;
+		/*background-image: url("https://c0.anyrgb.com/images/409/411/iphone-ipad-flat-lay-notebook-workplace-working-minimalistic-dahlia-red-dahlia.jpg");*/
+		/*background-image: url("../images/expblur.jpg");*/
+		background-color: var(--color-1);
+		background-size: contain;
+		background-repeat:repeat;
+		background-attachment: fixed;
+		background-position:top;
+	  }
+	  
+	  #survey-container {
+		margin: 20px auto;
+		padding: 30px 20px;
+		width: 100%;
+		max-width: 840px;
+		border-radius: calc(3 * var(--border-radius));
+	  }
+	  
+	  #title {
+		margin: 30px 0;
+		text-align: center;
+		font-family: "Kumbh Sans", sans-serif;
+		font-size: 50px;
+		text-transform: capitalize;
+		color: var(--color-3);
+	  }
+	  
+	  #description {
+		margin: 30px 0;
+		padding: 5px;
+		text-align: center;
+		font-size: 22px;
+		font-weight: bold;
+		color: var(--color-3);
+	  }
+	  
+	  #survey-form {
+		padding: 30px;
+		padding-top: 20px;
+		background: var(--color-1);
+		opacity: 98%;
+		border: none;
+		border-radius: calc(1.75 * var(--border-radius));
+	  }
+	  
+	  #survey-form * {
+		font-size: var(--font-size);
+	  }
+	  #name-label
+	  {
+		  text-align: left;
+	  }
+	  #email-label
+	  {
+		text-align: left;
+	  }
+
+
+	  .row-label,
+	  .row-input {
+		padding: 5px 10px;
+		margin: 0;
+		height: var(--box-height);
+		width: 100%;
+		display: block;
+		text-align: left;
+	  }
+	  
+	  .row-label {
+		color: var(--color-3);
+		font-weight: 600;
+	  }
+	  
+	  .row-label:not(:first-child) {
+		margin-top: var(--space-between);
+	  }
+	  
+	  .row-input:not(.small) {
+		background: white;
+		border: none;
+		border-radius: var(--border-radius);
+	  }
+	  
+	  .inline-label {
+		margin-left: 10px;
+		font-size: 14px;
+		color: var(--color-3);
+	  }
+	  
+	  .small {
+		height: calc(var(--box-height));
+	  }
+	  
+	  #comments {
+		padding: 10px;
+		margin: 0;
+		height: 80px;
+		width: 100%;
+		background: white;
+		border: none;
+		border-radius: var(--border-radius);
+		resize: none;
+	  }
+	  
+	  #submit {
+		margin-top: calc(2 * var(--space-between));
+		height: var(--box-height);
+		width: 100%;
+		background: var(--color-4);
+		border: none;
+		border-radius: var(--border-radius);
+		color: white;
+		font-weight: 600;
+		cursor: pointer;
+		text-transform: capitalize;
+	  }
+	  
+	  #submit:hover {
+		box-shadow: 0 0 2px var(--color-3);
+	  }
+	  
+	 #info1{
+		 text-align:left;
+		 
+		 color:black;
+		 
+		 font-family:arial;
+		 font-size:20px;
+	 }
+	 #info2{
+		 text-align:left;
+		 
+		 color:black;
+		 
+		 font-family:arial;
+		 font-size:16px;
+	 }
+	  #info3{
+		 text-align:left;
+		 
+		 color:#888889;
+		 
+		 font-family:arial;
+		 font-size:12px;
+	 }
+	 #info4{
+		 text-align:left;
+		 
+		 color:#888889;
+		 
+		 font-family:arial;
+		 font-size:12px;
+	 }
+	 
+	 #button2{ width:350px; height:35px; 
+	 top:625px; background:#f0db8e; font-family:verdana;
+	 font-size:16px; font-weight:bold; color:rgb(46, 40, 40); border-radius:5px 5px 5px 5px;
+	 border-width: 1px; border-style:solid; border-color: gray;
+	 cursor:pointer; outline:none; }
+	 .sub-footer{
+		position:absolute;
+		width:100%;
+		height:100px;
+		background:#474644;
+		top:1650px;
+		left:0px;
+		color:rgb(122, 221, 235);
+		z-index:20;
+		font-family:verdana;
+		 
+	 }
+	 
+	  .box2{
+		 
+		 color:rgb(122, 221, 235);
+		 height:100px;
+		 width:848px;
+		 background:#474644;
+		 padding-top:15px;
+		 padding-left:10px;
+		 padding-right:10px;
+		 padding-bottom:25px;
+	 }
+	 #submit2{  background:rgb(122, 221, 235);
+	 color:rgb(56, 49, 49);  z-index:20; 
+	 height:30px; width:70px; cursor:pointer; 
+	 }
+	 .footer{
+		position:absolute;
+		width:100%;
+		height:80px;
+		background:rgb(70, 63, 63);
+		top:650px;
+		left:0px;
+		color:rgb(169, 250, 210);
+		z-index:20;
+		font-family:verdana;
+		 
+	 }
+	 
+	  .box3{
+		 
+		 color:rgb(196, 248, 228);
+		 height:50px;
+		 width:1000px;
+		 
+		 padding-top:10px;
+		 padding-left:10px;
+		 padding-right:10px;
+		 padding-bottom:20px;
+	 }
+	 .box3 li{
+		 float:left;
+		 margin-right:20px;
+		 font-size:12px;
+	 }
 	
-}
-.header{
-    position:absolute;
-	width:100%;
-	height:70px;
-	background:#333333;
-	top:0px;
-	left:0px;
-	color:rgb(252, 241, 177);
-	z-index:7;
-	font-family:verdana;
-	
-}
-#logo{
-	height:38px;
-	width:240px;
-	left:22%;
-	bottom: 50%;
-	
-	
-	
-}
-#form1{
-	left:43%;
-	top:10px;
-	height:25px;
-	width:200px;
-	
-}
-#form2{
-	left:60%;
-	top:10px;
-	height:25px;
-	width:200px;
-}
-#forget{
-	color:rgb(241, 241, 187);
-	font-size:12px;
-	margin-top:5px;
-}
-#submit1{ left:76%; top:12px; background:rgb(238, 234, 234);
- color:black;  z-index:20; 
- height:30px; width:70px; cursor:pointer; 
- }
- .main{
-	position:absolute;
-	width:100%;
-	height:600;
-	background-image:url("../images/Register/backgorund.jpg");
-    background-repeat:repeat;
-    background-size:contain;
-	top:70px;
-	left:0px;
-	right:0px;
-	color:rgb(174, 243, 243);
-	z-index:20;
-	font-family:verdana;
-	 
- }
- .box{
-	 margin-top:20px;
-	 
-	 height:450px;
-	 width:450px;
-	 background:#efefef;
-	 padding-top:15px;
-	 padding-left:28px;
-	 padding-right:28px;
-	 padding-bottom:25px;
- }
- #info1{
-	 text-align:center;
-	 
-	 color:black;
-	 
-	 font-family:arial;
-	 font-size:20px;
- }
- #info2{
-	 text-align:center;
-	 
-	 color:black;
-	 
-	 font-family:arial;
-	 font-size:16px;
- }
-  #info3{
-	 text-align:left;
-	 
-	 color:#888889;
-	 
-	 font-family:arial;
-	 font-size:12px;
- }
- #info4{
-	 text-align:center;
-	 
-	 color:#888889;
-	 
-	 font-family:arial;
-	 font-size:12px;
- }
- 
- #button2{ width:350px; height:35px; 
- top:625px; background:#f0db8e; font-family:verdana;
- font-size:16px; font-weight:bold; color:rgb(46, 40, 40); border-radius:5px 5px 5px 5px;
- border-width: 1px; border-style:solid; border-color: gray;
- cursor:pointer; outline:none; }
- .sub-footer{
-	position:absolute;
-	width:100%;
-	height:100px;
-	background:#474644;
-    top:550px;
-	left:0px;
-	color:rgb(122, 221, 235);
-	z-index:20;
-	font-family:verdana;
-	 
- }
- 
-  .box2{
-	 
-	 color:rgb(122, 221, 235);
-	 height:100px;
-	 width:848px;
-	 background:#474644;
-	 padding-top:15px;
-	 padding-left:10px;
-	 padding-right:10px;
-	 padding-bottom:25px;
- }
- #submit2{  background:rgb(122, 221, 235);
- color:rgb(56, 49, 49);  z-index:20; 
- height:30px; width:70px; cursor:pointer; 
- }
- .footer{
-	position:absolute;
-	width:100%;
-	height:80px;
-	background:rgb(70, 63, 63);
-    top:650px;
-	left:0px;
-	color:rgb(169, 250, 210);
-	z-index:20;
-	font-family:verdana;
-	 
- }
- 
-  .box3{
-	 
-	 color:rgb(196, 248, 228);
-	 height:50px;
-	 width:1000px;
-	 
-	 padding-top:10px;
-	 padding-left:10px;
-	 padding-right:10px;
-	 padding-bottom:20px;
- }
- .box3 li{
-	 float:left;
-	 margin-right:20px;
-	 font-size:12px;
- }
