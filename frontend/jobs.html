@@ -66,8 +66,13 @@
                             <div class="card" data-aos="fade-up" data-aos-delay="100">
                                 <img src="images/project/project-image01.jpg" alt="Avatar" style="width:100%">
                                 <div class="container">
-                                  <h5 class="mt-3" style="color: #057a8d;">Job A</h5> 
-                                  <p>Interior Designer</p> 
+                                  <h5 id="compNameLoc" class="mt-3" style="color: #057a8d;"></h5> 
+                                  <p id="typeOfWorkDur"></p>
+                                  <p id="field">Field: </p> 
+                                  <p id="loEXP">Experince: </p> 
+                                  <p id="about"></p> 
+                                  <p id="hp">Hiring Process: </p>
+                                  <p id="hpw"></p>
                                 </div>
 
                                 <div class="row justify-content-center align-items-center mb-3">
@@ -83,55 +88,25 @@
      </section>
 
 
-     <footer class="site-footer">
-        <div class="container">
-          <div class="row">
-  
-            <div class="col-lg-5 mx-lg-auto col-md-8 col-10">
-              <h1 class="text-white" data-aos="fade-up" data-aos-delay="100">Bringing employers and employees <strong>together</strong></h1>
-            </div>
-  
-            <div class="col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-delay="200">
-              <h4 class="my-4">Contact Info</h4>
-  
-              <p class="mb-1">
-                <i class="fa fa-phone mr-2 footer-icon"></i> 
-                +91 XXXXX XXXXX
-              </p>
-  
-              <p>
-                <a href="#">
-                  <i class="fa fa-envelope mr-2 footer-icon"></i>
-                  hello@hirend.com
-                </a>
-              </p>
-            </div>
-  
-            <div class="col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-delay="300">
-              <h4 class="my-4">Located in</h4>
-  
-              <p class="mb-1">
-                <i class="fa fa-home mr-2 footer-icon"></i> 
-                India
-              </p>
-            </div>
-  
-            
-  
-          </div>
-        </div>
-      </footer>
-
 	 <script>
-	 console.log(localStorage.getItem("jobs"))
-	 </script>
+	      var s = console.log(localStorage.getItem("jobs"));
+        var obj = JSON.parse(s);
+        document.getElementById("compNameLoc").innerHTML = obj.company_name + ", " + obj.location;
+        document.getElementById("typeOfWorkDur").innerHTML = obj.type_of_work + ", " + obj.duration;
+        document.getElementById("field").innerHTML = obj.field;
+        document.getElementById("loEXP").innerHTML = obj.level_of_experience;
+        document.getElementById("about").innerHTML = obj.about_the_company;
+        document.getElementById("hp").innerHTML = obj.hiring_process;
+        document.getElementById("hpw").innerHTML = obj.hours_per_week;
+   </script>
+   
      <!-- SCRIPTS -->
      <script src="js/jquery.min.js"></script>
      <script src="js/bootstrap.min.js"></script>
      <script src="js/aos.js"></script>
      <script src="js/owl.carousel.min.js"></script>
      <script src="js/custom.js"></script>
-     	  <script type="text/javascript" src=js/categories.js></script>
+     <script type="text/javascript" src=js/categories.js></script>
 
 </body>
 </html>
