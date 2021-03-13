@@ -3,13 +3,14 @@ const Schema = mongoose.Schema
 
 const Jobs = new Schema({
 	company_name:{type: String},
-	duration:{type: String},
 	location:{type: String},
 	type_of_work: {type: String},
+	field:{type:String},
 	level_of_experience:{type : String},
 	about_the_company:{type: String},
 	hiring_process:{type: String},
 	hours_per_week:{type: Number},
+	duration:{type: String},
     applicants:[{name: {type: String, required: "Please enter your name" },
     email: {type: String, required: true},
     phone: {type: Number, required: "Enter contact number"},

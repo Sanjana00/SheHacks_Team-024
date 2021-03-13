@@ -1,8 +1,9 @@
 {
 	"company_name" : "Google",
 	"duration" : "2 months",
-	"location" : "Bengaluru, India",
+	"location" : "Bengaluru",
 	"type_of_work" : "Internship",
+	"field":"Software",
 	"level_of_experience" : "None",
 	"about_the_company" : "dummy info",
 	"hiring_process" : "https://mymemeserver.herokuapp.com",
@@ -22,9 +23,10 @@
 {
 	"company_name" : "Microsoft",
 	"duration" : "8 months",
-	"location" : "Hyderabad, India",
+	"location" : "Hyderabad",
 	"type_of_work" : "Internship",
-	"level_of_experience" : "None",
+	"field":"UI/UX",
+	"level_of_experience" : "Experience in technical domains is preferred",
 	"about_the_company" : "dummy info #2",
 	"hiring_process" : "https://mymemeserver.herokuapp.com",
 	"hours_per_week" : 8,
@@ -53,11 +55,34 @@
 {
 	"company_name" : "Adobe",
 	"duration" : "5 years",
-	"location" : "Hyderabad, India",
-	"type_of_work" : "Full Time position",
+	"location" : "Hyderabad",
+	"field":"Design",
+	"type_of_work" : "Full-Time Role",
 	"level_of_experience" : "3 years of expertise",
 	"about_the_company" : "dummy info #3",
 	"hiring_process" : "https://mymemeserver.herokuapp.com",
 	"hours_per_week" : 38,
     "applicants" :	[]
+}
+{
+	"company_name" : "Intel",
+	"duration" : "5 years",
+	"location" : "Delhi",
+	"field":"Hardware",
+	"type_of_work" : "Full-Time Role",
+	"level_of_experience" : "3 years of expertise",
+	"about_the_company" : "dummy info #3",
+	"hiring_process" : "https://mymemeserver.herokuapp.com",
+	"hours_per_week" : 38,
+    "applicants" :	[
+    {	"name" : "Nyaa",
+    		"email" : "nyaa@gmail.com",
+    		"phone" : 9999456567,
+    		"university" : "IIEST",
+    		"major_field" : "IT",
+    		"passout_year" : 2023,
+    		"university_cgpa" : 8.9,
+    		"resume": "https://google.drive/nyaaa.pdf",
+    		"transcript": "https://bsjhshdcs/nyaaa.jpg"
+    	}]
 }
