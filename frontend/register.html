@@ -13,6 +13,7 @@
      <link rel="stylesheet" href="css/aos.css">
      <link rel="stylesheet" href="css/owl.carousel.min.css">
      <link rel="stylesheet" href="css/owl.theme.default.min.css"> 
+	 <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&family=Montserrat&display=swap" rel="stylesheet">
 <link type="text/css" rel="stylesheet" href="css/register.css" /> 
 
 
@@ -29,56 +30,140 @@
 			<div class="container">
 			  <a class="navbar-brand" href="index.html">
 				  <i class="fa fa-line-chart"></i>
-				  HireND 
-				  
+				  HireND  
 				</a>
 	
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
 					aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
-	
-
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a href="#about" class="nav-link smoothScroll active">About Us</a>
+						</li>
+						<li class="nav-item">
+							 <a href="categories.html" class="nav-link">Categories</a>
+						</li>
+						<li class="nav-item">
+							<a href="blog.html" class="nav-link">Blog</a>
+						</li>
+						<li class="nav-item">
+							<a href="contact.html" class="nav-link contact">Contact</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</nav>
-		
-
-		<div id="form1" class="header">
-			<input type="mail" style="height:25px; width:200px;" 
-			name="email" placeholder="Email or phone number" />
-		</div>
-		<div id="form2" class="header">
-			<input type="password" style="height:25px; width:200px;" 
-			name="email" placeholder="Password" /><br>
-			<div id="forget">forgot password?</div>
-		</div>
-		<div id="submit1" class="header">
-		<input type="submit" id="submit1" value="Sign in" />
-		</div>
 	</div>
+
 <div class="main">
  <center> 
-	 <div class="box">
-	  <div id="info1"> Be great at what you do</div><br>
-	  <div id="info2"> Get started - it's free.</div><br>
-	  <div id="info3">First Name</div>
-	  <input type="text" name="first-name" style="width:350px; height:30px;" />
-	  <br><br>
-	  <div id="info3">Last Name</div>
-	  <input type="text" name="last-name" style="width:350px; height:30px;" />
-	  <br><br>
-	  <div id="info3">Email Name</div>
-	  <input type="mail" name="email" style="width:350px; height:30px;" />
-	  <br><br>
-	  <div id="info3">Password (6 or more characters)</div>
-	  <input type="password" name="password" style="width:350px; height:30px;" />
-	  <br><br>
-	  <div id="info4"> By clicking Join now, you agree to HireND's User
-	  <b style="color:black;">Agreement</b>, 
-	  <b style="color:black">Privacy Policy</b>, 
-	  and<b style="color:black">Cookie Policy</b>.</div><br>
-	  <input id="button2" type="submit" value="Creat account" />
-	 </div>
+	<div class = "main" id="survey-container">
+
+		<h1 id="title">Job form</h1>
+	  
+		<p id="description">Fill in to apply</p>
+	  
+		<form id="survey-form">
+	  
+		  <!-- name -->
+		  <label id="name-label" class="row-label" for="name">Name:</label>
+		  <input id="name" class="row-input" type="text" placeholder="Enter your name" required>
+	  
+		  <!-- email -->
+		  <label id="email-label" class="row-label" for="email">Email:</label>
+		  <input id="email" class="row-input" type="email" placeholder="Enter your email" required>
+	  
+		  <!-- education dropdown -->
+		  <label class="row-label" for="dropdown">Level of education:</label>
+		  <select id="dropdown" class="row-input" required>
+			<option disabled selected>Select an option</option>
+			<option value="primary">Post Graduation</option>
+			<option value="secondary">Graduation</option>
+			<option value="higher">Higher School</option>
+		  </select>
+
+		  <!-- Domain -->
+		  <label class="row-label" for="dropdown">Domain:</label>
+		  <select id="dropdown" class="row-input" required>
+			<option disabled selected>Select an option</option>
+			<option value="primary">Software Engineering</option>
+			<option value="secondary">Civil Engineering</option>
+			<option value="secondary">Electrical Engineering</option>
+			<option value="higher">Business Management</option>
+			<option value="higher">Hotel Management</option>
+			<option value="higher">Human Resource Management</option>
+		  </select>
+	  
+		  <!-- years of experience -->
+		  <label id="number-label" class="row-label" for="number">Years of experience (optional):</label>
+		  <input id="number" class="row-input" type="number" placeholder="Enter number of years of experience" min="0" max="50">
+
+		  <p class="row-label">What are you looking for?:</p>
+	  
+		  <label class="row-input small" for="below-3k">
+			<input type="radio" id="below-3k" name="radio" value="below-3k">
+			<span class="inline-label">Full Time Employee</span>
+		  </label>
+
+		  <label class="row-input small" for="below-3k">
+			<input type="radio" id="below-3k" name="radio" value="below-3k">
+			<span class="inline-label">Part Time Employee</span>
+		  </label>
+	  
+		  <label class="row-input small" for="3k-4k">
+			<input type="radio" id="3k-4k" name="radio" value="3k-4k">
+			<span class="inline-label">Internship</span>
+		  </label>
+	  
+		  <!-- Skills -->
+		  <label id="email-label" class="row-label" for="email">Skills:</label>
+		  <input id="email" class="row-input" type="email" placeholder="Enter your skills, comma separated" required>
+		  
+		  <!-- salary radio 
+		  <p class="row-label">Expected salary:</p>
+	  
+		  <label class="row-input small" for="below-3k">
+			<input type="radio" id="below-3k" name="radio" value="below-3k">
+			<span class="inline-label">Below $3K</span>
+		  </label>
+	  
+		  <label class="row-input small" for="3k-4k">
+			<input type="radio" id="3k-4k" name="radio" value="3k-4k">
+			<span class="inline-label">$3K - $4K</span>
+		  </label>
+	  
+		  <label class="row-input small" for="4k-5k">
+			<input type="radio" id="4k-5k" name="radio" value="4k-5k">
+			<span class="inline-label">$4K - $5K</span>
+		  </label>
+	  
+		  <label class="row-input small" for="above-5k">
+			<input type="radio" id="above-5k" name="radio" value="above-5k">
+			<span class="inline-label">Above $5K</span>
+		  </label>
+	  
+		  <label class="row-input small" for="dont-know">
+			<input type="radio" id="dont-know" name="radio" value="dont know">
+			<span class="inline-label">Don't know</span>
+		  </label>
+		  -->
+		  
+		  <!-- resume -->
+		  <label id="email-label" class="row-label" for="email">Link to your Resume/CV:</label>
+		  <input id="email" class="row-input" type="email" placeholder="Enter your resume link" required>
+	  
+		  <!-- comments textarea -->
+		  <label class="row-label" for="comments">Additional informations:</label>
+		  <textarea id="comments" placeholder="Enter other informations here..."></textarea>
+	  
+		  <!-- submit button -->
+		  <button id="submit" type="submit">Submit</button>
+	  
+		</form>
+	  
+	  </div>
  </center>
  <div class="sub-footer">
 
