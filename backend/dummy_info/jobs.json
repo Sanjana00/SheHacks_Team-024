@@ -1,0 +1,63 @@
+{
+	"company_name" : "Google",
+	"duration" : "2 months",
+	"location" : "Bengaluru, India",
+	"type_of_work" : "Internship",
+	"level_of_experience" : "None",
+	"about_the_company" : "dummy info",
+	"hiring_process" : "https://mymemeserver.herokuapp.com",
+	"hours_per_week" : 10,
+    "applicants" :	[
+    	{	"name" : "Abc",
+    		"email" : "abc@gmail.com",
+    		"phone" : 833456567,
+    		"university" : "ABc univ",
+    		"major_field" : "infotech",
+    		"passout_year" : 2022,
+    		"university_cgpa" : 9.1,
+    		"resume": "https://google.drive/fvdv.pdf",
+    		"transcript": "https://bsjhshdcs/dadc.jpg"
+    	}]
+}
+{
+	"company_name" : "Microsoft",
+	"duration" : "8 months",
+	"location" : "Hyderabad, India",
+	"type_of_work" : "Internship",
+	"level_of_experience" : "None",
+	"about_the_company" : "dummy info #2",
+	"hiring_process" : "https://mymemeserver.herokuapp.com",
+	"hours_per_week" : 8,
+    "applicants" :	[
+    	{	"name" : "Abcdef",
+    		"email" : "abcdef@gmail.com",
+    		"phone" : 9991356567,
+    		"university" : "ABcdef univ",
+    		"major_field" : "cse",
+    		"passout_year" : 2023,
+    		"university_cgpa" : 9.5,
+    		"resume": "https://google.drive/Abcdef.pdf",
+    		"transcript": "https://Abcdef/dadc.jpg"
+		},
+		{	"name" : "Brrrr",
+    		"email" : "brrr@gmail.com",
+    		"phone" : 8888888823,
+    		"university" : "Brrrr univ",
+    		"major_field" : "etc",
+    		"passout_year" : 2023,
+    		"university_cgpa" : 9.2,
+    		"resume": "https://google.drive/Brrrrr.pdf",
+    		"transcript": "https://bsjhshdcs/Brrrr.jpg"
+		}]
+}
+{
+	"company_name" : "Adobe",
+	"duration" : "5 years",
+	"location" : "Hyderabad, India",
+	"type_of_work" : "Full Time position",
+	"level_of_experience" : "3 years of expertise",
+	"about_the_company" : "dummy info #3",
+	"hiring_process" : "https://mymemeserver.herokuapp.com",
+	"hours_per_week" : 38,
+    "applicants" :	[]
+}
