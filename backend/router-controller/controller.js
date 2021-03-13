@@ -7,7 +7,7 @@ Job.find({location:req.body.location, type_of_work:req.body.type_of_work, field:
         if (err) {
             res.send(err);
         }
-        res.json(jobs);
+        res.send(jobs);
     });
   } ;  	
 exports.putUser = (req, res) => {	

@@ -74,7 +74,7 @@
         
                                     <p>
                                         <div class="custom-select" style="width: 100%;">
-                                            <select>
+                                            <select id="one" >
                                                 <option value="0">Location</option>
                                                 <option value="1">Delhi</option>
                                                 <option value="2">Hyderbad</option>
@@ -96,7 +96,7 @@
         
                                     <p>
                                         <div class="custom-select" style="width: 100%;">
-                                            <select>
+                                            <select id="two" >
                                               <option value="0">Type</option>
                                               <option value="1">Internship</option>
                                               <option value="2">Full-Time Role</option>
@@ -117,7 +117,7 @@
         
                                     <p>
                                         <div class="custom-select" style="width: 100%;">
-                                            <select>
+                                            <select id="three" >
                                                 <option value="0">Field</option>
                                                 <option value="1">Software</option>
                                                 <option value="2">Hardware</option>
@@ -186,7 +186,7 @@
      <!-- SCRIPTS -->
 
      <script>
-        var x, i, j, l, ll, selElmnt, a, b, c;
+        var x, i, j, l, ll, selElmnt, a, b, c,val1,val2,val3;
         /*look for any elements with the class "custom-select":*/
         x = document.getElementsByClassName("custom-select");
         l = x.length;
@@ -216,6 +216,18 @@
                 for (i = 0; i < sl; i++) {
                 if (s.options[i].innerHTML == this.innerHTML) {
                     s.selectedIndex = i;
+                    if(s.id=="one")
+                    {
+                    	val1=this.innerHTML;
+                    }
+                    else if(s.id=="two")
+                    {
+                    	val2=this.innerHTML;
+                    }
+                    else
+                    {
+                    	val3=this.innerHTML;
+                    }
                     h.innerHTML = this.innerHTML;
                     y = this.parentNode.getElementsByClassName("same-as-selected");
                     yl = y.length;
@@ -264,8 +276,9 @@
         /*if the user clicks anywhere outside the select box,
         then close all select boxes:*/
         document.addEventListener("click", closeAllSelect);
-    </script>
-     
+    </script >
+     <script src="./node_modules/axios/dist/axios.min.js"></script>
+     <script data-val1=val1 data-val2=val2 data-val3=val3 src="js/categories.js"></script>
      <script src="js/jquery.min.js"></script>
      <script src="js/bootstrap.min.js"></script>
      <script src="js/aos.js"></script>

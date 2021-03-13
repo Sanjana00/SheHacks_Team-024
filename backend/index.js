@@ -1,10 +1,11 @@
 import express from 'express';
 import mongoose from 'mongoose';
+let cors = require('cors')
 let bodyParser = require('body-parser')
 const pageRouter = require('./router-controller/router')
 const app = express();
 const db = require('./connection')
-
+app.use(cors())
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 
