@@ -133,15 +133,16 @@
 
 
 	 <script>
-	      var s = console.log(localStorage.getItem("jobs"));
+	     var s = localStorage.getItem("jobs");
         var obj = JSON.parse(s);
-        document.getElementById("compNameLoc").innerHTML = obj.company_name + ", " + obj.location;
-        document.getElementById("typeOfWorkDur").innerHTML = obj.type_of_work + ", " + obj.duration;
-        document.getElementById("field").innerHTML = obj.field;
-        document.getElementById("loEXP").innerHTML = obj.level_of_experience;
-        document.getElementById("about").innerHTML = obj.about_the_company;
-        document.getElementById("hp").innerHTML = obj.hiring_process;
-        document.getElementById("hpw").innerHTML = obj.hours_per_week;
+        console.log(obj);
+        document.getElementById("compNameLoc").innerHTML = obj[0].company_name + ", " + obj[0].location;
+        document.getElementById("typeOfWorkDur").innerHTML = obj[0].type_of_work + ", " + obj[0].duration;
+        document.getElementById("field").innerHTML = obj[0].field;
+        document.getElementById("loEXP").innerHTML = obj[0].level_of_experience;
+        document.getElementById("about").innerHTML = obj[0].about_the_company;
+        document.getElementById("hp").innerHTML = obj[0].hiring_process;
+        document.getElementById("hpw").innerHTML = obj[0].hours_per_week;
    </script>
    
      <!-- SCRIPTS -->
