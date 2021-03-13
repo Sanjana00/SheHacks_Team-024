@@ -20,7 +20,7 @@ const Jobs = new Schema({
     resume:{type:String, required: true},
     transcript:{type:String, required: true}
     }]
-});
+})
 
-export default mongoose.model('Jobs', Jobs);
+module.exports = mongoose.model('Jobs', Jobs);
 
