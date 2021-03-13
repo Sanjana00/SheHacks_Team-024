@@ -112,18 +112,6 @@
 
 
 	 <script>
-<<<<<<< HEAD
-	     var s = localStorage.getItem("jobs");
-        var obj = JSON.parse(s);
-        console.log(obj);
-        document.getElementById("compNameLoc").innerHTML = obj[0].company_name + ", " + obj[0].location;
-        document.getElementById("typeOfWorkDur").innerHTML = obj[0].type_of_work + ", " + obj[0].duration;
-        document.getElementById("field").innerHTML = obj[0].field;
-        document.getElementById("loEXP").innerHTML = obj[0].level_of_experience;
-        document.getElementById("about").innerHTML = obj[0].about_the_company;
-        document.getElementById("hp").innerHTML = obj[0].hiring_process;
-        document.getElementById("hpw").innerHTML = obj[0].hours_per_week;
-=======
 	      var s = localStorage.getItem("jobs");
         var obj = JSON.parse(s);
 
@@ -143,18 +131,18 @@
                                   <h5 id="compNameLoc" class="mt-3" style="color: #057a8d;">
                                     ${result.company_name}, ${result.location}
                                     </h5> 
-                                  <p id="typeOfWorkDur">${result.type_of_work}, ${result.duration} <br> 
+                                  <p id="typeOfWorkDur">${result.duration} ${result.type_of_work}, <br> 
                                     ${result.hours_per_week} hours per week
                                     </p>
                                   <p id="field">Field: ${result.field}</p> 
                                   <p id="loEXP">Experince: ${result.level_of_experience}</p> 
-                                  <p id="about">${result.about_the_company}</p> 
-                                  <p id="hp">Hiring Process: ${result.hiring_process}</p>
+                                  <p id="about">About: ${result.about_the_company}</p> 
+                                  <a href=${result.hiring_process} style="color:blue; font-weight:900;">Hiring Process</a>
                                   
                                 </div>
 
                                 <div class="row justify-content-center align-items-center mb-3">
-                                  <button class="button5 button6">Apply</button>
+                                  <button class="button5 button6" onclick="callformpage()"}>Apply</button>
                                 </div>
                               </div>
                         </div>`;
@@ -162,7 +150,9 @@
           // Append newyly created card element to the container
           container.innerHTML += content;
         })
->>>>>>> a97b2ed4a6a024b1ec59816af31bb7d22dd36a08
+        function callformpage()
+        {window.location.replace("register.html");}
+   
    </script>
    
      <!-- SCRIPTS -->
