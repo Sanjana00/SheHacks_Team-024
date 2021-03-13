@@ -392,6 +392,29 @@
     background: var(--primary-color);
   }
 
+
+  .job-info {
+    background: var(--white-color);
+    border-radius: var(--border-radius-small);
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    left: 8px;
+    width: 90%;
+    padding: 8px;
+  }
+
+  .job-info small {
+    font-family: Plain-Bold;
+    color: var(--gray-color);
+    position: relative;
+    top: 2px;
+  }
+
+  .job-info a {
+    color: var(--primary-color);
+  }
+
   .project-icon {
     position: absolute;
     right: 30px;
