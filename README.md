@@ -19,3 +19,6 @@ With an anticipated rise in inclusive hiring techniques, a more structured appro
 - [Sonal Kushwaha](https://github.com/sonalsk)
 - [Sanandita Das](https://github.com/sanandita001)
 - [Aishwarya Deb](https://github.com/Chibi-girl)
+
+
+Website template: [here](https://www.free-css.com/free-css-templates/page263/digital-trend)
