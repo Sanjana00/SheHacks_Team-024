@@ -8,7 +8,7 @@ HireND is a job portal aimed at connecting employers to employees through neurod
 
 Since the usual interview and selection processes place neurodivergent individuals at an obvious disadvantage, the industry needs to adapt to more inclusive hiring practices. Observation has shown that having more neurodivergent people in the workforce resulted in boosted productivity, greater attention to detail, rise in innovation and an overall healthier and more inclusive work environment. It also led to managers paying greater attention to employee satisfaction.
 
-With an anticipated rise in inclusive hiring techniques, a more structured approach was needed. Therefore, HideND came into being. We hope that each and every individual, irrespective of their differences, is able to showcase their skills and unlock their full potential.
+With an anticipated rise in inclusive hiring techniques, a more structured approach was needed. Therefore, HireND came into being. We hope that each and every individual, irrespective of their differences, is able to showcase their skills and unlock their full potential.
 
 <img src="./readme-img/home.png"/>
 <img src="./readme-img/index.png"/>
