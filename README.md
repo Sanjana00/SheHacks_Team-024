@@ -1,6 +1,4 @@
-# SheHacks Team-024 Catch_42
-
-## HireND
+# HireND
 
 > Neurodiversity is a competitive advantage
 
@@ -10,15 +8,31 @@ Since the usual interview and selection processes place neurodivergent individua
 
 With an anticipated rise in inclusive hiring techniques, a more structured approach was needed. Therefore, HireND came into being. We hope that each and every individual, irrespective of their differences, is able to showcase their skills and unlock their full potential.
 
+# Tech Stack
+1. HTML
+2. CSS
+3. JavaScript
+4. MongoDB
+5. ExpressDB
+
+# Screenshots
 <img src="./readme-img/home.png"/>
 <img src="./readme-img/index.png"/>
 
-### Members:
+# Team
 
 - [Sanjana Chakravarty](https://github.com/Sanjana00)
 - [Sonal Kushwaha](https://github.com/sonalsk)
 - [Sanandita Das](https://github.com/sanandita001)
 - [Aishwarya Deb](https://github.com/Chibi-girl)
 
+# Project Video
+Link : https://www.youtube.com/watch?v=h2C8ysk2FeQ
+
+# Project PPT
+Link : https://drive.google.com/file/d/11q2uddHrAyNrdEFElrsbocYQr3ihAdG2/view
+
+# Hackathon DevFolio Link
+Link: https://devfolio.co/submissions/hirend-8903
 
 Website template: [here](https://www.free-css.com/free-css-templates/page263/digital-trend)
